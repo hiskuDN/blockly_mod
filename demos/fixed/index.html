@@ -3,10 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Blockly Demo: Fixed Blockly</title>
-  <script src="../../blockly_compressed.js"></script>
+  <script src="../../blockly_uncompressed.js"></script>
   <script src="../../blocks_compressed.js"></script>
   <script src="../../msg/js/en.js"></script>
-  <script src="./custom_blocks.js"></script>  
+  <script src="./script/move_mod.js"></script>  
+  <script src="./script/turn_mod.js"></script>
+  <script src="./script/repeat_mod.js"></script>
+  <script src="./script/path_mod.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
   <style>
     body {
       background-color: #fff;
@@ -41,7 +45,17 @@
     </category>
     <category name="Modified">
       <!-- Created a custom block "move" in the javascript file custom_blocks.js -->
-      <block type="move"></block>
+      <!-- Move Block -->
+      <block type="move_mod"></block>
+
+      <!-- Turn Block -->
+      <block type="turn_mod"></block>
+
+      <!-- Repeat Block -->
+      <block type="repeat_mod"></block>
+
+      <!-- Path Block -->
+      <block type="path_mod"></block>
 
       <!-- Block already exists in the original library so creating a custom block wasn't necessary -->
       <block type="controls_for">
@@ -61,14 +75,7 @@
           </shadow>
         </value>
       </block>
-
-
-      <!-- Created a custom block "mod_if" in the javascript file custom_blocks.js -->
-    <!-- </category>
-    <category name="Mutated">
-      <block type="mod_ifElse"></block>
-      
-    </category> -->
+    </category>
   </xml>
 
   <script>

@@ -107,14 +107,15 @@ Blockly.DropDownDiv.ANIMATION_TIME = 0.25;
  * @type {string}
  * @const
  */
-Blockly.DropDownDiv.DEFAULT_DROPDOWN_BORDER_COLOR = '#dadce0';
+// TODO: Edited the following two statements to match the color that was specified in the PDF
+Blockly.DropDownDiv.DEFAULT_DROPDOWN_BORDER_COLOR = 'rgb(120, 0, 220)';
 
 /**
  * The default dropdown div color.
  * @type {string}
  * @const
  */
-Blockly.DropDownDiv.DEFAULT_DROPDOWN_COLOR = '#fff';
+Blockly.DropDownDiv.DEFAULT_DROPDOWN_COLOR = 'rgb(120, 0, 220)';
 
 /**
  * Timer for animation out, to be cleared if we need to immediately hide

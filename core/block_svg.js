@@ -232,6 +232,7 @@ Blockly.BlockSvg.prototype.compose;
  * Create and initialize the SVG representation of the block.
  * May be called more than once.
  */
+// TODO: Read this block
 Blockly.BlockSvg.prototype.initSvg = function() {
   if (!this.workspace.rendered) {
     throw TypeError('Workspace is headless.');
