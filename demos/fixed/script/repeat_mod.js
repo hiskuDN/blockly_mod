@@ -1,14 +1,15 @@
 // Repeat block definition
 Blockly.Blocks['repeat_mod'] = {
   init: function() {
-    this.appendStatementInput("NAME")
-    .setCheck(null)
+    this.appendDummyInput()
     .appendField("repeat")
     .appendField(new Blockly.FieldNumber(5), "NAME")
     .appendField("times");
-    this.setColour(255);
+    this.appendStatementInput("NAME")
+    .setCheck(null);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
+    this.setColour(255);
     this.setTooltip("Please enter a number");
     this.setHelpUrl("");
   }
@@ -20,4 +21,3 @@ Blockly.JavaScript['repeat_mod'] = function(block) {
   var code = '...;\n';
   return code;
 };
-
