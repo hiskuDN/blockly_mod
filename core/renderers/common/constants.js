@@ -285,14 +285,15 @@ Blockly.blockRendering.ConstantProvider.prototype.makePuzzleTab = function() {
  */
 Blockly.blockRendering.ConstantProvider.prototype.makeNotch = function() {
   
-  // TODO: Edit this
+  // TODO: Edited this
   // var width = this.NOTCH_WIDTH;
   // var height = this.NOTCH_HEIGHT;
-  var width = 50;
+  var width = 30;
   var height = 15;
 
-  var innerWidth = 3;
-  var outerWidth = (width - innerWidth) / 2;
+  // TODO: Edited this
+  var innerWidth = 25;
+  var outerWidth = 4;
   function makeMainPath(dir) {
     return Blockly.utils.svgPaths.line(
         [
@@ -301,7 +302,6 @@ Blockly.blockRendering.ConstantProvider.prototype.makeNotch = function() {
           Blockly.utils.svgPaths.point(dir * outerWidth, -height)
         ]);
   }
-  // TODO: Find a relationship between width and path
   var pathLeft = makeMainPath(1);
   var pathRight = makeMainPath(-1);
 
