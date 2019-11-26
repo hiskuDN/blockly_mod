@@ -56,7 +56,7 @@ Blockly.blockRendering.ConstantProvider = function() {
 
   // This is the minimum width of a block measuring from the end of a rounded
   // corner
-  this.MIN_BLOCK_WIDTH = 12;
+  this.MIN_BLOCK_WIDTH = 20;
 
   this.EMPTY_BLOCK_SPACER_HEIGHT = 16;
 
@@ -70,11 +70,13 @@ Blockly.blockRendering.ConstantProvider = function() {
    * Rounded corner radius.
    * @type {number}
    */
-  this.CORNER_RADIUS = 8;
+  // TODO: Edited this
+  this.CORNER_RADIUS = 4;
 
   // Offset from the left side of a block or the inside of a statement input to
   // the left side of the notch.
-  this.NOTCH_OFFSET_LEFT = 15;
+  // TODO: Edited this
+  this.NOTCH_OFFSET_LEFT = 0;
 
   this.STATEMENT_BOTTOM_SPACER = 0;
   this.STATEMENT_INPUT_PADDING_LEFT = 20;
@@ -282,8 +284,13 @@ Blockly.blockRendering.ConstantProvider.prototype.makePuzzleTab = function() {
  * @package
  */
 Blockly.blockRendering.ConstantProvider.prototype.makeNotch = function() {
-  var width = this.NOTCH_WIDTH;
-  var height = this.NOTCH_HEIGHT;
+  
+  // TODO: Edit this
+  // var width = this.NOTCH_WIDTH;
+  // var height = this.NOTCH_HEIGHT;
+  var width = 50;
+  var height = 15;
+
   var innerWidth = 3;
   var outerWidth = (width - innerWidth) / 2;
   function makeMainPath(dir) {
